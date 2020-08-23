@@ -1,0 +1,567 @@
+/*
+Template Name       :   Evolo
+Template Author     :   Yousef Alaa
+Template Version    :
+My Email            :   yousefalaa11223344@gmail.com
+Date Created        :
+Last Update         :
+*/
+
+
+/*****************************************
+Table Of Contents:
+
+01. Main Rules
+02. Preloader
+03. Navigation
+04. Header
+05. Customers
+06. Services
+07. Details 1
+08. Details 2
+09. Details Lightboxes
+10. Pricing
+11. Request
+12. Video
+13. Testimonials
+14. About
+15. Contact
+16. Footer
+17. Copyright
+18. Back To Top Button
+19. Extra Pages
+20. Media Queries
+******************************************/
+
+/*****************************************
+Colors:
+- Backgrounds - turquoise #00bfd8
+- Backgrounds - blue #0079f9
+- Backgrounds - light gray #f7fcfd
+- Buttons, bullets, icons, links - turquoise #00bfd8
+- Cards border, inputs border - light gray #c4d8dc
+- Text headers, navbar links - black #393939
+- Text body - black #626262
+******************************************/
+
+/*
+Import Google Fonts
+====================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/droidarabickufi.css');
+
+/*Start Main Rules*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root {
+    --main-color: #00bfd8;
+    --black: #393939;
+    --white: #FFF;
+    --p-color: #626262
+}
+
+body{font-family: 'Raleway','Oswald',serif;}
+
+.container {width: 90%;margin: auto}
+
+p {color: var(--p-color)}
+
+a {text-decoration: none}
+
+.main-button {
+    all: unset;
+    background-color: var(--main-color);
+    color: var(--white);
+    width: 130px;
+    height: 45px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 40px;
+    border: 3px solid var(--main-color);
+    transition: .5s;
+    cursor: pointer
+}
+
+.main-button:hover {background-color: var(--white);color: var(--main-color)}
+
+
+/*End Main Rules*/
+
+/* Start Header */
+header {
+    background-image: url(../img/header-background.jpg);
+    background-size: 100% 100%;overflow: hidden;
+    padding-left: 5%;padding-right: 5%;
+    min-height: 600px;
+}
+
+header nav {width: 100%;height: 60px;overflow: hidden;padding-top: 10px;transition: .2s}
+
+header nav .logo {float: left;}
+
+header nav .logo img {height: 100%;width: 140px}
+
+header nav > ul {list-style: none;float: right;padding-top: 10px;}
+
+header nav > ul li {display: inline-block;margin-left: 30px;}
+
+header nav > ul li a {color: var(--white);opacity: 0.7}
+
+header nav ul li a:hover,
+header nav ul .active {opacity: 1}
+
+header nav ul li a[href="#"] {
+    background-color: var(--main-color);
+    color: var(--white);
+    border-radius: 50%;
+    text-align: center;
+    opacity: 1
+}
+
+header nav ul li a[href="#"] i {width: 25px;height: 25px;}
+
+header nav ul li a[href="#"]:hover {background-color: var(--white);color: var(--main-color)}
+
+header nav > ul li [href="#about"] {position: relative}
+header nav > ul li ul {
+    position: absolute;right: 190px;top: 40px;
+    display: none;
+    background: #FFF;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 1px 10px 5px #CCC;
+}
+header nav > ul li ul li {display: block;margin: auto;}
+header nav > ul li ul li:first-of-type {margin-bottom: 10px;border-bottom: 1px solid #CCC;padding-bottom: 8px;}
+header nav > ul li ul li a {color: var(--black);}
+header nav > ul li ul li a:hover {color: var(--main-color);}
+
+header .hi-li:hover .hi-ul {display: block}
+
+header .words {float: left;width: 50%;padding-left: 50px}
+header .words h1:first-of-type {color: var(--main-color);margin-top: 120px;font-size: 55px}
+header .words h1:last-of-type {color: var(--black);font-size: 55px}
+
+header .img {float: right;width: 50%}
+header .img img {width: 40vw;height: 40vw;float: right;}
+
+.fixed-nav {
+    position: fixed;left: 0;
+    background: #FFF;
+    padding-left: 5%;padding-right: 5%;
+    box-shadow: 0 0 10px;
+    overflow: visible
+}
+
+.fixed-nav ul li a {color: var(--main-color);}
+
+/* End Header */
+
+
+/* Start Trusted */
+.trusted {}
+.trusted h3 {text-align: center}
+.trusted .slider {width: 80%;margin: auto;background-color: #f7fcfd;height: 100px;}
+.trusted .slider img {width: 150px;margin-left: 30px;}
+
+.trusted #autoWidth {height: 50px;}
+
+
+/* End Trusted */
+
+/* Start services */
+.services {overflow: hidden}
+
+.services h1 {text-align: center;color: var(--black)}
+
+.services > p {text-align: center;}
+
+.services article {width: 25%;float: left; margin: 4%;border: 1px solid #CCC;border-radius: 10px}
+
+.services article img {width: 120px;margin-left: calc(50% - 60px);margin-top: 35px;}
+
+.services article h2 {text-align: center;color: var(--black);margin: 25px}
+
+.services article p {text-align: center;;margin-bottom: 30px}
+
+/* End services */
+
+
+/* Start Plans */
+.plans{margin-top: 70px}
+
+.plans .content1 {overflow: hidden}
+.plans .content1 div {float: left;width: 50%;padding-left: 50px}
+.plans .content1 div h1 {color: var(--black);line-height: 50px;margin-top: 120px;}
+.plans .content1 div p {;line-height: 30px}
+
+.plans .content1 img {float: right;width: 42vw;height: 42vw;z-index: 0}
+
+.plans .content2 {overflow: hidden}
+.plans .content2 div {float: right;width: 50%;padding-left: 11%;margin-top: 100px}
+.plans .content2 div h1 {color: var(--black);line-height: 50px;margin-top: 120px;}
+.plans .content2 div p {;line-height: 30px}
+.plans .content2 div p i {color: var(--main-color)}
+
+.plans .content2 img {float: left;width: 42vw;height: 42vw;margin-top: 50px;z-index: 0}
+
+/* End Plans */
+
+/* Start LightBox 1 */
+#light-box-1 {
+    position: fixed;top: 0;left: 0;
+    width: 100%;height: 100%;z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .5s;
+    display: none;
+}
+
+.light-box-1 {
+    width: 76vw;height: 90%;overflow: hidden;
+    position: relative;left: calc(50% - 38vw);top: 5%;
+    background-color: #FFF;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.light-box-1 > button {position: absolute;top: -26px;right: 17px;border-radius: 50%;width: 25px;height: 25px;}
+
+.light-box-1 .image {float: left;width: 70%;display: flex;justify-content: center;margin-top: 25px;}
+.light-box-1 .image img {width: 80%;margin-top: 30px}
+
+.light-box-1 .content {float: left;width: 30%;padding-top: 30px}
+.light-box-1 .content h1 {color: var(--black);margin-bottom: 0;}
+.light-box-1 .content .short-line {display: inline-block;width: 40px;height: 5px;background-color: var(--main-color)}
+.light-box-1 .content h3 {margin: 20px 0}
+.light-box-1 .content > p {line-height: 22px;margin-bottom: 20px;}
+.light-box-1 .content article p {margin-bottom: 5px}
+.light-box-1 .content article p i {color: var(--main-color)}
+.light-box-1 .content .req-btn {width: 100px;height: 40px;margin-right: 20px;}
+
+.light-box-1 .content .back-btn {
+    background-color: var(--white);
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+    width: 100px;height: 45px;
+    text-align: center;margin-top: 40px;
+    transition: .5s;cursor: pointer;
+    border-radius: 25px;
+}
+
+
+/* End LightBox 1 */
+
+
+/* Start LightBox 2 */
+#light-box-2 {
+    position: fixed;top: 0;left: 0;
+    width: 100%;height: 100%;z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .5s;
+    display: none;
+}
+
+.light-box-2 {
+    width: 76vw;height: 90%;overflow: hidden;
+    position: relative;left: calc(50% - 38vw);top: 5%;
+    background-color: #FFF;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.light-box-2 > button {position: absolute;top: -26px;right: 17px;border-radius: 50%;width: 25px;height: 25px;}
+
+.light-box-2 .image {float: left;width: 70%;display: flex;justify-content: center;margin-top: 25px;}
+.light-box-2 .image img {width: 80%;margin-top: 30px}
+
+.light-box-2 .content {float: left;width: 30%;padding-top: 30px}
+.light-box-2 .content h1 {color: var(--black);margin-bottom: 0;}
+.light-box-2 .content .short-line {display: inline-block;width: 40px;height: 5px;background-color: var(--main-color)}
+.light-box-2 .content h3 {margin: 20px 0}
+.light-box-2 .content > p {line-height: 22px;margin-bottom: 20px;}
+.light-box-2 .content article p {margin-bottom: 5px}
+.light-box-2 .content article p i {color: var(--main-color)}
+.light-box-2 .content .req-btn-2 {width: 100px;height: 40px;margin-right: 20px;}
+
+.light-box-2 .content .back-btn-2 {
+    background-color: var(--white);
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+    width: 100px;height: 45px;
+    text-align: center;margin-top: 40px;
+    transition: .5s;cursor: pointer;
+    border-radius: 25px;
+}
+
+/* End LightBox 2 */
+
+/* Start Options */
+.options {overflow: hidden;min-height: 600px}
+.options > h1 {text-align: center;color: var(--black)}
+.options > p {text-align: center;}
+
+.options > article {width: 25%;float: left; margin: 4%;border: 1px solid #CCC;border-radius: 10px;}
+.options > article h2 {text-align: center;color: var(--black);margin-top: 50px;font-size: 40px;}
+.options > article > p {text-align: center;margin-top: 20px}
+.options > article h1 {text-align: center;color: var(--main-color);font-size: 45px;}
+.options > article > span {text-align: center;color: var(--p-color);display: block;}
+
+.options > article div {padding-left: 15%;margin: 25px auto -15px}
+.options > article div p {margin-bottom: 10px}
+.options > article div p span {margin-right: 7px}
+.options > article div p span i {color: var(--main-color)}
+.options > article button {margin-left: calc(50% - 50px);width: 100px;height: 40px;margin-bottom: -20px;}
+
+
+/* End Options */
+
+/* Start Request */
+.request {overflow: hidden;background-color: #f9fafc;padding-top: 60px;}
+.request div {float: left;width: 50%;padding-left: 140px;}
+.request div h1 {color: var(--black)}
+.request div section:first-of-type p {line-height: 23px}
+
+.request div section:last-of-type {margin-top: 30px;}
+.request div section:last-of-type p {margin-bottom: 10px;}
+.request div section:last-of-type p i {color: var(--main-color)}
+.request div section:last-of-type p strong {color: var(--black)}
+
+
+.request form {float: left;width: 50%}
+.request form input[type="text"],
+.request form input[type="email"],
+.request form input[type="tel"] {
+    all:unset;
+    display: block;
+    width: 400px;
+    height: 15px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 15px;
+    color: var(--black);
+    margin: 20px 0
+}
+.request form select {
+    display: block;
+    width: 432px;
+    height: 47px;
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding-left: 15px;
+    color: var(--p-color);
+    margin: 20px 0
+    }
+.request form select option {}
+.request form input[type="checkbox"] {}
+.request form label {color: var(--black);font-size: 15px;}
+.request form label a {color: var(--main-color)}
+
+.request form .main-button {display: block;height: 40px;width: 120px}
+
+/* End Request */
+
+/* Start Video */
+.video {background-color: #f9fafc;padding-top: 100px;}
+.video h1 {text-align: center;color: var(--black)}
+.video img {width: 66%;margin-left: calc(50% - 33%);}
+.video p {color: var(--p-color);text-align: center;margin-top: 30px;}
+.video p strong {color: var(--black);}
+
+/* End Video */
+
+/* Start Testimonials */
+.testimonials {background-image: url(../img/testimonials-background.jpg);background-size: 100% 100%;overflow: hidden}
+.testimonials article {float: left;width: 50%}
+.testimonials article > img {width: 40vw;height: 40vw;margin-left: 15%;margin-top: 50px;}
+.testimonials article img[alt="alternative"] {margin-left: calc(50% - 50px);width: 100px;height: 100px;margin-bottom: 30px}
+.testimonials section {width: 80%;margin-left: 10%;border: 1px solid #CCC;height: 250px;}
+.testimonials section p {text-align: center;line-height: 25px;}
+
+/* End Testimonials */
+
+/* Start About Team */
+.about-team {overflow: hidden}
+.about-team h1 {text-align: center;color: var(--black)}
+.about-team p {text-align: center;margin-bottom: 50px;}
+.about-team article {float: left;width: 25%}
+.about-team article h2 {text-align: center;color: var(--black);margin: 25px;}
+.about-team article h3 {text-align: center;color: var(--p-color);margin-bottom: 20px;}
+.about-team article section {border-radius: 50%;margin: auto;width: 14vw;height: 14vw;overflow: hidden;}
+.about-team article section img {border-radius: 50%;width: 14vw;height: 14vw;transition: .5s}
+.about-team article section img:hover{transform: scale(1.1, 1.1)}
+.about-team article span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer
+}
+
+.about-team article span:first-of-type {margin-left: 38%;}
+
+.about-team article span a i {vertical-align: -moz-middle-with-baseline;color: #FFF}
+
+.about-team article span:hover {opacity: .7}
+
+/* End About Team */
+
+/* Start Contact */
+.contact {overflow: hidden;margin-top: 80px;}
+.contact h1 {color: var(--black);text-align: center;}
+.contact p {text-align: center;margin-bottom: 15px}
+.contact p i {color: var(--main-color)}
+.contact section {display: flex;justify-content: center;}
+.contact section span {color: var(--main-color);margin-left: 15px;}
+
+.contact .map {float: left;width: 50%;margin-top: 50px;}
+.contact .map iframe {width: 25vw;height: 25vw;float: right;margin-right: 50px;}
+
+
+.contact form {float: left;width: 50%;margin-top: 50px;padding-left: 35px;}
+.contact form input[type="text"],
+.contact form input[type="email"] {
+    display: block;
+    width: 400px;
+    height: 43px;
+    padding-left: 8px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+.contact form textarea {
+    display: block;
+    width: 400px;
+    height: 43px;
+    padding-left: 8px;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    resize: vertical;
+    padding-top: 10px;
+}
+
+.contact form label {font-size: 15px;color: var(--p-color);}
+.contact form label a {color: var(--main-color);}
+.contact form .main-button {display: block;width: 180px;margin-top: 60px;}
+
+/* End Contact */
+
+/* Start Footer */
+footer {overflow: hidden;margin-top: 70px;}
+footer article {overflow: hidden}
+footer article section {float: left;width: 26%;margin: 3.5%}
+footer article section h1 {color: var(--black)}
+footer article section p {font-size: 16px;margin-bottom: 10px}
+footer article section p i {color: var(--main-color);font-size: 15px;}
+footer article section p a {color: var(--main-color)}
+footer article section span {
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 1
+}
+
+footer article section span:hover {opacity: 0.7}
+
+footer article section span a {color: #FFF}
+
+footer .copy {border-top: 1px solid #CCC;padding: 20px;}
+footer .copy p {text-align: center}
+footer .copy p span {color: var(--main-color)}
+
+/* End Footer */
+
+/* Top Button */
+#top-btn {
+    all: unset;
+    position: fixed;
+    bottom: -40px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    transition: .5s
+}
+
+#top-btn i {color: #FFF;}
+
+#top-btn:hover {opacity: .7}
+
+/* End Button */
+
+/*-------------------Terms & Conditions----------------------*/
+header .heading {color: var(--black);text-align: center;font-size: 50px;margin-top: 180px;}
+header h6 {margin: 15px 0 0 15px;font-size: 15px;color: #CCC;cursor: pointer;}
+header h6 a {color: var(--main-color)}
+.conditions article {padding-left: 50px;margin-bottom: 60px;}
+.conditions article h2 {font-size: 30px;color: var(--black);margin-bottom: 25px;}
+.conditions article p {line-height: 22px;margin-bottom: 11px;}
+.conditions article p a,
+.conditions article p i {color: var(--main-color)}
+
+/*----------------------Privacy-----------------------*/
+.privacy article {margin-bottom: 50px}
+
+.privacy article:first-of-type {overflow: hidden}
+.privacy article:first-of-type > h2 {color: var(--black);margin-bottom: 25px;}
+.privacy article:first-of-type > p {line-height: 23px;margin-bottom: 15px;}
+.privacy article:first-of-type > p a {color: var(--main-color);text-decoration: underline}
+.privacy article:first-of-type section {display: inline-block;float: left;width: 50%;margin-top: 45px;}
+.privacy article:first-of-type section p {margin-bottom: 10px;line-height: 25px;}
+.privacy article:first-of-type section p i {color: var(--main-color)}
+
+.privacy article:nth-of-type(2) h2 {color: var(--black);margin-bottom: 15px;}
+.privacy article:nth-of-type(2) p {margin-bottom: 15px;}
+.privacy article:nth-of-type(2) ol li {color: var(--p-color);margin-bottom: 9px;line-height: 24px;}
+
+.privacy article:nth-of-type(3) h2,
+.privacy article:nth-of-type(4) h2 {color: var(--black);margin-bottom: 15px;}
+.privacy article:nth-of-type(3) p,
+.privacy article:nth-of-type(4) p {line-height: 24px;}
+
+.privacy article:last-of-type {overflow: hidden}
+.privacy article:last-of-type section {width: 50%;float: left}
+.privacy article:last-of-type section:first-of-type {padding-left: 5%}
+.privacy article:last-of-type section h2 {color: var(--black);margin-bottom: 17px}
+.privacy article:last-of-type section p {margin-bottom: 23px;line-height: 23px;}
+.privacy article:last-of-type section input[type="text"],
+.privacy article:last-of-type section input[type="email"],
+.privacy article:last-of-type section select {
+    border: 1px solid #CCC;
+    display: block;
+    height: 40px;
+    width: 400px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 22px;
+    background: var(--white);
+    color: var(--p-color);
+}
+.privacy article:last-of-type section label {color: var(--p-color);}
+.privacy article:last-of-type section label a {color: var(--p-color);text-decoration: underline}
+.privacy article:last-of-type section .main-button {display: block}
+
+
+
+
+
+
+
+
+
