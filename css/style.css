@@ -138,7 +138,7 @@ header {
 
 header .main-button {margin-top: 10px;}
 
-header .words h1:first-of-type {color: var(--main-color);margin-top: 10%;font-size: 55px}
+header .words h1:first-of-type {color: #FFF;margin-top: 10%;font-size: 55px;text-shadow: 0 0 10px var(--main-color);}
 header .words h1:last-of-type {color: var(--black);font-size: 55px}
 
 
@@ -188,7 +188,7 @@ header .words h1:last-of-type {color: var(--black);font-size: 55px}
     width: 100%;height: 100%;z-index: 10;
     background-color: rgba(0, 0, 0, 0.7);
     transition: .5s;
-    display: none;
+    display: block;
 }
 
 .light-box-1 {
@@ -201,16 +201,16 @@ header .words h1:last-of-type {color: var(--black);font-size: 55px}
 
 .light-box-1 > button {position: absolute;top: -26px;right: 17px;border-radius: 50%;width: 25px;height: 25px;z-index: 2}
 
-.light-box-1 .control {margin: 0;}
+.light-box-1 .image {width: 100%;height: 35%}
+.light-box-1 .image img {height: 100%;display: block;margin: 30px auto 0}
 
-.light-box-1 .image {}
-.light-box-1 .image img {height: 80%;margin-top: 45px}
-
-.light-box-1 .content {}
-.light-box-1 .content h1 {color: var(--black);margin-bottom: 0;margin-top: 45px}
+.light-box-1 .content {width: 100%;height: 65%;overflow: hidden}
+.light-box-1 .content section {float: left;width: 50%;height: 100%;}
+.light-box-1 .content h1 {color: var(--black);margin-bottom: 0;}
 .light-box-1 .content .short-line {display: inline-block;width: 40px;height: 5px;background-color: var(--main-color)}
 .light-box-1 .content h3 {margin: 10px 0}
 .light-box-1 .content > p {line-height: 22px;margin-bottom: 10px;}
+.light-box-1 .content article {margin-top: 70px}
 .light-box-1 .content article p {margin-bottom: 2px}
 .light-box-1 .content article p i {color: var(--main-color)}
 .light-box-1 .content .req-btn {width: 100px;height: 40px;margin-right: 20px;}
@@ -249,17 +249,19 @@ header .words h1:last-of-type {color: var(--black);font-size: 55px}
 
 .light-box-2 > button {position: absolute;top: -26px;right: 17px;border-radius: 50%;width: 25px;height: 25px;}
 
-.light-box-2 .image {float: left;width: 70%;display: flex;justify-content: center;margin-top: 25px;}
-.light-box-2 .image img {width: 80%;margin-top: 30px}
+.light-box-2 .image {width: 100%;height: 35%}
+.light-box-2 .image img {height: 100%;display: block;margin: 30px auto 0}
 
-.light-box-2 .content {float: left;width: 30%;padding-top: 30px}
+.light-box-2 .content {width: 100%;height: 65%;overflow: hidden}
+.light-box-2 .content section {float: left;width: 50%;height: 100%;}
 .light-box-2 .content h1 {color: var(--black);margin-bottom: 0;}
 .light-box-2 .content .short-line {display: inline-block;width: 40px;height: 5px;background-color: var(--main-color)}
 .light-box-2 .content h3 {margin: 20px 0}
 .light-box-2 .content > p {line-height: 22px;margin-bottom: 20px;}
+.light-box-2 .content article {margin-top: 70px}
 .light-box-2 .content article p {margin-bottom: 5px}
 .light-box-2 .content article p i {color: var(--main-color)}
-.light-box-2 .content .req-btn-2 {width: 100px;height: 40px;margin-right: 20px;}
+.light-box-2 .content .req-btn-2 {width: 100px;height: 40px;margin-right: 20px;margin-top: 10px}
 
 .light-box-2 .content .back-btn-2 {
     background-color: var(--white);
@@ -363,7 +365,7 @@ header .words h1:last-of-type {color: var(--black);font-size: 55px}
     position: absolute;right: 20px;top: 40px;
 }
 
-#video iframe {width: 60%;height: 70%;display: block;margin: 7.5% auto;z-index: 5}
+#video iframe {width: 50%;height: 50%;display: block;margin: 12.5% auto;z-index: 5;}
 
 /* End Video */
 
@@ -527,9 +529,9 @@ header h6 a {color: var(--main-color)}
 .privacy article:nth-of-type(3) p,
 .privacy article:nth-of-type(4) p {line-height: 24px;}
 
-.privacy article:last-of-type {overflow: hidden}
-.privacy article:last-of-type section {width: 50%;float: left}
-.privacy article:last-of-type section:first-of-type {padding-left: 5%}
+.privacy article:last-of-type {}
+.privacy article:last-of-type section {}
+.privacy article:last-of-type section:first-of-type {}
 .privacy article:last-of-type section h2 {color: var(--black);margin-bottom: 17px}
 .privacy article:last-of-type section p {margin-bottom: 23px;line-height: 23px;}
 .privacy article:last-of-type section input[type="text"],
