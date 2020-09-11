@@ -1,12 +1,5 @@
 /*global document, window*/
 
-/*
-
-<ul id="autoWidth" class="cs-hidden">
-<li class="item-a">
-
-*/
-
 var
     i = 0,
     
@@ -24,7 +17,13 @@ var
     
     lBHid2 = document.getElementsByClassName('back-btn-2'),// LB = Light Box
     
-    topButton = document.getElementById('top-btn');
+    topButton = document.getElementById('top-btn'),
+    
+    videoDiv = document.getElementById('video'),
+    
+    videoShow = document.getElementsByClassName('show-video'),
+    
+    videoHid = document.getElementsByClassName('back-btn-3');
 
 
 // Top Button & Fixed Nav
@@ -54,12 +53,10 @@ lBShow1.onclick = function () {
     document.getElementById('light-box-1').style.display = 'block';
 };
 
+var lBHidFun = function () {'use strict'; document.getElementById('light-box-1').style.display = "none"; };
+
 while (i < lBHid1.length) {
-    lBHid1[i].onclick = function () {
-        'use strict';
-    
-        document.getElementById('light-box-1').style.display = 'none';
-    };
+    lBHid1[i].onclick = lBHidFun;
     
     i = i + 1;
 }
@@ -77,12 +74,10 @@ lBShow2.onclick = function () {
     document.getElementById('light-box-2').style.display = 'block';
 };
 
+var lBHidFun2 = function () {'use strict'; document.getElementById('light-box-2').style.display = "none"; };
+
 while (x < lBHid2.length) {
-    lBHid2[x].onclick = function () {
-        'use strict';
-    
-        document.getElementById('light-box-2').style.display = 'none';
-    };
+    lBHid2[x].onclick = lBHidFun2;
     
     x = x + 1;
 }
@@ -90,4 +85,16 @@ while (x < lBHid2.length) {
 reqBtn2[0].onclick = function () {
     'use strict';
     document.getElementById('light-box-2').style.display = 'none';
+};
+
+
+// Video
+videoShow[0].onclick = function () {
+    'use strict';
+    videoDiv.style.display = "block";
+};
+
+videoHid[0].onclick = function () {
+    'use strict';
+    videoDiv.style.display = "none";
 };

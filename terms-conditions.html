@@ -12,8 +12,8 @@
         <meta name="copyright"          content="Evolo" />
         <title>Evolo - Terms &amp; Conditions</title>
         <link rel="icon"        href="img/favicon.png">
-        <!--Normalize Library-->
-        <link rel="stylesheet"  href="css/normalize.css"/>
+        <!--Bootstrap Framework-->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <!--Stylesheet-->
         <link rel="stylesheet"  href="css/style.css"/>
 
@@ -34,24 +34,48 @@
         
         <!-- Start Header -->
         <header id="header">
-            <nav>
-                <div class="logo"><img src="img/logo.svg" alt="Logo"/></div>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#request">Request</a></li>
-                    <li class="hi-li">
-                        <a href="#about">About <i class="fas fa-sort-down"></i></a>
-                        <ul class="hi-ul">
-                            <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                </ul>
+            <nav class="navbar navbar-expand-md">
+                
+                <div class="navbar-brand"><img src="img/logo.svg" alt="Logo" loading="lazy"/></div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="#header" class="nav-link smooth-scroll">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link smooth-scroll">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#pricing" class="nav-link smooth-scroll">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#request" class="nav-link smooth-scroll">Request</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="terms-conditions.html">Terms &amp; Conditions</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link smooth-scroll">Contact</a>
+                        </li>
+                        <li class="nav-item social-media-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li class="nav-item social-media-icons">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <h6><a href="index.html">Home</a> <i class="fas fa-angle-double-right"></i> Terms &amp; Conditions</h6>
             <h1 class="heading">Terms &amp; Conditions</h1>
@@ -133,6 +157,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="js/script.js"></script>
         <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.smooth-scroll.min.js"></script>
         <script src="js/plugins.js"></script>
     </body>
