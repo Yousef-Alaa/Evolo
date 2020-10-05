@@ -4,6 +4,8 @@ var
     i = 0,
     
     x = 0,
+    
+    animationDiv = document.querySelector('.load-animation'),
 
     lBShow1 = document.getElementById('show-light-box-1'),// LB = Light Box
     
@@ -17,13 +19,15 @@ var
     
     lBHid2 = document.getElementsByClassName('back-btn-2'),// LB = Light Box
     
-    topButton = document.getElementById('top-btn'),
-    
-    videoDiv = document.getElementById('video'),
-    
-    videoShow = document.getElementsByClassName('show-video'),
-    
-    videoHid = document.getElementsByClassName('back-btn-3');
+    topButton = document.getElementById('top-btn');
+
+
+// Loading Animation
+
+window.onload = function () {
+    'use strict';
+    animationDiv.style.display = 'none';
+};
 
 
 // Top Button & Fixed Nav
@@ -85,16 +89,4 @@ while (x < lBHid2.length) {
 reqBtn2[0].onclick = function () {
     'use strict';
     document.getElementById('light-box-2').style.display = 'none';
-};
-
-
-// Video
-videoShow[0].onclick = function () {
-    'use strict';
-    videoDiv.style.display = "block";
-};
-
-videoHid[0].onclick = function () {
-    'use strict';
-    videoDiv.style.display = "none";
 };
