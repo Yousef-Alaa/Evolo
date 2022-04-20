@@ -1,11 +1,4 @@
-/*global document, window*/
-
-var
-    i = 0,
-    
-    x = 0,
-    
-    animationDiv = document.querySelector('.load-animation'),
+let animationDiv = document.querySelector('.load-animation'),
 
     lBShow1 = document.getElementById('show-light-box-1'),// LB = Light Box
     
@@ -23,17 +16,12 @@ var
 
 
 // Loading Animation
-
-window.onload = function () {
-    'use strict';
-    animationDiv.style.display = 'none';
-};
+window.onload = function () {animationDiv.style.display = 'none';};
 
 
 // Top Button & Fixed Nav
-
 window.onscroll = function () {
-    'use strict';
+    
     
     if (window.pageYOffset >= 600) {
         topButton.style.bottom = "20px";
@@ -52,41 +40,32 @@ window.onscroll = function () {
 // Light Box 1
 
 lBShow1.onclick = function () {
-    'use strict';
-    
     document.getElementById('light-box-1').style.display = 'block';
 };
 
-var lBHidFun = function () {'use strict'; document.getElementById('light-box-1').style.display = "none"; };
+let lBHidFun = function () { document.getElementById('light-box-1').style.display = "none"; };
 
-while (i < lBHid1.length) {
+for (let i = 0;i < lBHid1.length;i++) {
     lBHid1[i].onclick = lBHidFun;
-    
-    i = i + 1;
 }
 
 reqBtn1[0].onclick = function () {
-    'use strict';
+    
     document.getElementById('light-box-1').style.display = 'none';
 };
 
 // Light Box 2
 
 lBShow2.onclick = function () {
-    'use strict';
-    
     document.getElementById('light-box-2').style.display = 'block';
 };
 
-var lBHidFun2 = function () {'use strict'; document.getElementById('light-box-2').style.display = "none"; };
+let lBHidFun2 = function () { document.getElementById('light-box-2').style.display = "none"; };
 
-while (x < lBHid2.length) {
+for (let x = 0;x < lBHid2.length;x++) {
     lBHid2[x].onclick = lBHidFun2;
-    
-    x = x + 1;
 }
 
 reqBtn2[0].onclick = function () {
-    'use strict';
     document.getElementById('light-box-2').style.display = 'none';
 };
